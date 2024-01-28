@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="mini-calender-day-marker">
+        <div class="mini-date">Sun</div>
+        <div class="mini-date">Mon</div>
+        <div class="mini-date">Tue</div>
+        <div class="mini-date">Wed</div>
+        <div class="mini-date">Thu</div>
+        <div class="mini-date">Fri</div>
+        <div class="mini-date">Sat</div>
+    </div>
+    <div class="mini-calender-dates">
+        <div *ngFor="let day of datesArr">
+            <div class="max-date">
+                <div style="width: 100%;" *ngIf="day.key">
+                    <div> {{day.key | date: 'dd MMM'}}</div>
+                    <div matTooltip="Click to edit" (click)="editEvent(day)" class="event-col" *ngFor="let eve of day.value">
+                        <div >{{eve}}</div> <mat-icon (click)="$event.stopPropagation(); deleteEvent(day)" matTooltip="Want to delete ?">delete</mat-icon>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,73 @@
+@import '../../../assets/css/variables';
+
+.container {
+    width: 1000px;
+    margin-bottom: 12px;
+}
+
+.heading {
+    margin-top: 12px;
+    font-size: 24px;
+    padding: 12px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.account-filter {
+    display: flex;
+    align-items: center;
+}
+
+.my-accnt-btn {
+    margin-left: 12px;
+    background-color: $primary-color;
+    color: black;
+}
+
+.mini-calender-day-marker {
+    margin-top: 12px;
+    display: flex;
+}
+
+.mini-calender-dates {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    overflow: hidden;
+}
+
+.max-date {
+    flex: 1;
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mini-date {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.selected-mini-date {
+    background-color: $app-bg-color;
+    border-radius: 4px;
+    margin: 2px;
+    font-weight: 500;
+}
+.event-col {
+    background-color: $primary-color;
+    padding: 2px 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,41 @@
+@import '../../../assets/css/variables';
+
+.container {
+    width: 1240px;
+    background-color: $app-bg-color;
+    height: 100vh;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background: $white-color;
+    padding: 0 12px;
+    box-shadow: 0px 4px 16px 0px #0000001A;
+}
+
+.logout {
+    margin-left: 12px;
+    height: 30px;
+    width: 30px;
+    background-image: url('../../../assets/icons/logout.jpg');
+    background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.calender-view {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 25px;
+    background-color: $white-color;
+    padding: 10px 20px;
+}
+
+.cal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

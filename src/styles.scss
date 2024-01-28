@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/css/variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200;1,300&display=swap');
+
+html,
+body {
+    height: 100%;
+    background-color: $app-bg-color;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Importing Bootstrap SCSS file. */
+
+
+*,
+*:before,
+*:after {
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: $text-color;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+._mb-12 {
+    margin-bottom: 12px;
+}
+
+._mt-12 {
+    margin-top: 12px;
+}
+
+.email-footer {
+    color: $highlight-color !important;
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.custom-button {
+    color: $primary-color !important;
+}
+
+.first-normal-font {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.first-bold-font {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.second-normal-font {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.second-bold-font {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.third-normal-font {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.third-bold-font {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-align {
+    text-align: center;
+}
+.prim {
+    background: $primary-color !important;
+    color: $white-color !important;
+}
+.half-opacity {
+    opacity: 0.5;
+}

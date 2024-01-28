@@ -1,0 +1,45 @@
+$app-bg-color: #F2F6F8;
+$folder-list-bg-color: #F5F8FA;
+$thread-list-bg-color: #F9FAF5;
+$highlight-color: #1FB5EB;
+$text-color: rgba(0, 0, 0, 0.80);
+$primary-color: #DD296F;
+$white-color: #FFFFFF;
+$grey-color: #33333380;
+
+
+
+
+
+@mixin first-normal-font {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin first-bold-font {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin second-normal-font {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+@mixin second-bold-font {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+@mixin third-normal-font {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin third-bold-font {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}

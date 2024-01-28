@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="nav-bar">
+        <div style="color: black;">My Calender</div>
+        <div>
+
+            <div style="display: flex; align-items: center;">
+                <button mat-button class="prim" (click)="createNewEvent()"> New </button>
+                <div (click)="optForLogout()" class="logout"> </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="calender-view">
+        <div class="cal-nav">
+            <button mat-flat-button (click)="goToPreviousMonth()"><mat-icon>keyboard_arrow_left</mat-icon></button>
+            <span style="margin: 0px 10px;">{{todaysDate | date: 'MMM, y'}}</span>
+            <button mat-flat-button (click)="goToNextMonth()"><mat-icon>keyboard_arrow_right</mat-icon></button>
+        </div>
+        <app-calender-view [selectedDateForRange]="todaysDate" [currentMonthObj]="currentMonthObj"></app-calender-view>
+    </div>
+</div>

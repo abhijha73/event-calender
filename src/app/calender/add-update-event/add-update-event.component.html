@@ -1,0 +1,25 @@
+<div class="header-and-close">
+    <div>
+        <span>Create Event</span>
+    </div>
+    <div>
+        <button (click)="closeDialogue()" mat-stroked-button>Close</button>
+    </div>
+</div>
+<div class="container">
+    <div class="_mb-12 date-container">
+        <label style="margin-right: 20px;" for="start">Event Date:</label>
+        <input style="padding: 5px;" type="date" id="start" name="event" value="{{selectedDate}}" [(ngModel)]="selectedDate"
+            min="{{minDate}}" max="{{maxDate}}" />
+    </div>
+    <div>
+        <mat-form-field style="width: 100%; ">
+            <mat-label>Event Name</mat-label>
+            <input matInput [(ngModel)]="eventName">
+        </mat-form-field>
+    </div>
+    <div style="display: flex; justify-content: flex-end;">
+        <button [class.half-opacity]="!eventName || !selectedDate" [disabled]="!eventName || !selectedDate" mat-button
+            class="prim" (click)="submitEvent()"> Save </button>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+@import '../../../../assets/css/variables';
+
+.container {
+    @include third-normal-font;
+    padding: 20px;
+}
